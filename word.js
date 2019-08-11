@@ -34,7 +34,7 @@ function Word(word) {
 } */
       temp.push(currentLetter);
     }
-    console.log(temp);
+    //console.log(temp);
     /*
     Array of Letter Object
         [
@@ -74,13 +74,11 @@ function Word(word) {
   this.checkLetter = function(letter) {
     for (var i = 0; i < this.word.length; i++) {
       var currentLetter = this.word[i];
-      console.log(currentLetter);
+
       currentLetter.checkGuess(letter);
     }
     return this.display;
   };
 }
-
-var word = new Word('cat');
 
 module.exports = Word;

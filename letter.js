@@ -1,6 +1,7 @@
 function Letter(character) {
   //A string value to store the underlying character for the letter
   this.character = character;
+
   //A boolean value that stores whether that letter has been guessed yet
   this.guessed = false;
 
